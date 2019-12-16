@@ -1,4 +1,4 @@
-# Minesweeper
+# Minesweeper [Play now](https://timmkchang.github.io/minesweeper/)
 A well-known computer game
 ## Motivation
 To practice HTML, CSS and JavaScript.
