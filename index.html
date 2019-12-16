@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+
+  <div id="game-bg">
+    <div id="customized-zone" class="border-style-outer">
+      <div id="customized-zone-title">Customize your own Minesweeper</div>
+      <div id="show-input-container">
+        <div id="show-input-row" class="show-input">Row</div>
+        <div id="show-input-col" class="show-input">Column</div>
+        <div id="show-input-bomb-number" class="show-input">Bomb Number</div>
+      </div>
+      <div id="customized-input-create">
+        <input type="text" class="customized-input" id="customized-input-row" placeholder="row size">
+        <input type="text" class="customized-input" id="customized-input-col" placeholder="column size">
+        <input type="text" class="customized-input" id="customized-input-bomb-number" placeholder="bomb number">
+        <buttton id="customized-create-btn" class="btn btn-danger">create</buttton>
+      </div>
+    </div>
+    <div id="main-area" class="border-style-outer">
+      <div id="status-bar" class="border-style-inner">
+        <div id="remain-bomb" class="numeral-zone">
+          <div id="remain-bomb-number-container"></div>
+        </div>
+        <div id="face-btn-container" class="border-style-outer"><i id="face-btn" class="far fa-smile"></i></div>
+        <div id="clock" class="numeral-zone">
+          <div id="clock-number-container"></div>
+        </div>
+      </div>
+      <div id="click-zone" class="border-style-inner"></div>
+    </div>
+  </div>
+
+  <!-- for using axios and bootstrap -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+#game-bg {
+  background-color: #8E8E8E;
+  min-height: 100vh;
+  padding: 2vh 0px;
+}
+
+#customized-zone {
+  width: 500px;
+  height: 120px;
+  margin: 0 auto;  
+  background-color: #D0D0D0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#customized-zone-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+#show-input-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.show-input {
+  font-size: 16px;
+  font-weight: 700;
+  width: 25%; 
+  margin: 0 7px;
+}
+
+#customized-input-create {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.customized-input {
+  width: 25%;
+  height: 100%;
+}
+
+#main-area {
+  width: 358px;
+  margin: 1vh auto;  
+  background-color: #D0D0D0;
+  padding: 15px;
+}
+
+#status-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+
+.numeral-zone {
+  background-color: #000000;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+#clock-number-container, #remain-bomb-number-container {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+#clock-number-container > *, #remain-bomb-number-container > * {
+  margin: 0 2px;
+}
+
+#face-btn {
+  font-size: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #F9F900;
+  margin: 3px;
+}
+
+#click-zone {
+  height: 322px;
+  margin: 0px auto;
+}
+
+.border-style-inner {
+  border-top: 3px solid #5B5B5B;
+  border-right: 3px solid #FCFCFC;
+  border-bottom: 3px solid #FCFCFC;
+  border-left: 3px solid #5B5B5B;
+}
+
+.border-style-outer {
+  border-top: 3px solid #FCFCFC;
+  border-right: 3px solid #5B5B5B;
+  border-bottom: 3px solid #5B5B5B;
+  border-left: 3px solid #FCFCFC;
+}
+
+.box {
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 900;
+  text-align: center;
+/*   when opened */
+  border: 1px solid #5B5B5B;
+  background-color: #ADADAD;
+}
+
+.opened-box {
+  border: 1px solid #5B5B5B;
+}
+
+.covered-box {
+  border-top: 3px solid #FCFCFC;
+  border-right: 3px solid #5B5B5B;
+  border-bottom: 3px solid #5B5B5B;
+  border-left: 3px solid #FCFCFC;
+  background-color: #D0D0D0;
+}
+
+.opened-bomb {
+  background-color: #FF2D2D;
+}
+
+.fa-flag {
+  color: #FF2D2D;
+}
+
+.question {
+  color: #3C3C3C;
+}
+
+/* color of number of bomb */
+.color-number-1 {
+  color: #2828FF;
+}
+
+.color-number-2 {
+  color: #009100;
+}
+
+.color-number-3 {
+  color: #FF0000;
+}
+
+.color-number-4 {
+  color: #3A006F;
+}
+
+.color-number-5 {
+  color: #842B00;
+}
+
+.color-number-6 {
+  color: #007979;
+}
+
+.color-number-7 {
+  color: #272727;
+}
+
+.color-number-8 {
+  color: #8E8E8E;
+}
+
+/* ------------------------------------- */
+/* for digital clock number */
+.number-template {
+  position: relative;
+  margin: 0 0.5%;
+  overflow: hidden;
+}
+
+.number-part {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 0 10%;
+}
+
+.number-part-1 {
+  transform: translate(0%, -45%);
+}
+
+.number-part-2 {
+  transform: rotate(-90deg) translate(45%, -20%);
+}
+
+.number-part-3 {
+  transform: rotate(-90deg) translate(45%, 20%);
+}
+
+.number-part-4 {
+  transform: translate(0%, 0%);
+}
+
+.number-part-5 {
+  transform: rotate(-90deg) translate(-45%, -20%);
+}
+
+.number-part-6 {
+  transform: rotate(-90deg) translate(-45%, 20%);
+}
+
+.number-part-7 {
+  transform: translate(0%, 45%);
+}
+
+.number-part-component {
+  width: 100%;
+  height: 50%;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+}
+
+.number-part-component-1 {
+  border-bottom-color: red;
+}
+
+.number-part-component-2 {
+  border-top-color: blue;
+}
+
+body {
+  /*   文字不會被選取 */
+  user-select: none;
+}
